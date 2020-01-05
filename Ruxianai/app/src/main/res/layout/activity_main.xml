@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#FAEBD7"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textColor="#E9967A"
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:id="@+id/title"
+        ></TextView>
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:maxWidth="20dp"
+            android:background="#FFFFFF"
+            android:hint="搜索"
+            android:textSize="25dp"></Button>
+
+
+
+
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="15dp"
+        android:background="#FFFFFF">
+
+<TextView
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="诊 断"
+    android:background="#1E90FF"
+    android:textSize="17dp"
+    android:layout_marginLeft="60dp"
+    android:id="@+id/zhenduan"
+    android:textColor="#FFFFFF"
+    ></TextView>
+        <TextView
+            android:id="@+id/huojian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:text="活检"
+            android:layout_below="@id/zhenduan"
+            android:textColor="#DB7093"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/pet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/huojian"
+            android:layout_alignLeft="@+id/huojian"
+            android:layout_marginTop="20dp"
+            android:text="PET"
+            android:textColor="#DB7093"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/daoguanai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pet"
+            android:layout_alignLeft="@+id/pet"
+            android:layout_marginTop="20dp"
+            android:textColor="#DB7093"
+            android:text="导管原位癌"></TextView>
+
+
+        <TextView
+            android:id="@+id/nianyeai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/daoguanai"
+            android:layout_alignLeft="@+id/daoguanai"
+            android:layout_marginTop="20dp"
+            android:textColor="#DB7093"
+            android:text="粘液癌"></TextView>
+
+        <TextView
+            android:id="@+id/more0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nianyeai"
+            android:layout_alignLeft="@id/nianyeai"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp"
+            android:textColor="#DB7093"
+            android:text="更多>>"></TextView>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生 活"
+            android:background="#BA55D3"
+            android:textSize="17dp"
+            android:layout_marginLeft="290dp"
+            android:id="@+id/shenghuo"
+            android:textColor="#FFFFFF"
+            ></TextView>
+
+        <TextView
+            android:layout_below="@+id/shenghuo"
+            android:id="@+id/sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:textColor="#DB7093"
+            android:text="运动"></TextView>
+
+        <TextView
+            android:id="@+id/pragnant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sport"
+            android:layout_alignLeft="@id/sport"
+            android:textColor="#DB7093"
+            android:layout_marginTop="20dp"
+            android:text="怀孕"></TextView>
+
+        <TextView
+            android:id="@+id/nutrition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pragnant"
+            android:layout_alignLeft="@id/pragnant"
+            android:layout_marginTop="20dp"
+            android:textColor="#DB7093"
+            android:text="营养"></TextView>
+
+
+        <TextView
+            android:id="@+id/tuofa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nutrition"
+            android:layout_alignLeft="@id/nutrition"
+            android:layout_marginTop="20dp"
+
+            android:textColor="#DB7093"
+            android:text="脱发"></TextView>
+
+        <TextView
+            android:id="@+id/more1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mianyi"
+            android:layout_alignLeft="@id/operation"
+            android:layout_marginTop="20dp"
+            android:textColor="#DB7093"
+            android:text="更多>>"
+
+            ></TextView>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="治 疗"
+            android:background="#FF69B4"
+            android:textSize="17dp"
+            android:layout_marginLeft="180dp"
+            android:id="@+id/zhiliao"
+            android:textColor="#FFFFFF"
+            ></TextView>
+
+        <TextView
+            android:layout_below="@+id/zhiliao"
+            android:id="@+id/operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#DB7093"
+            android:text="手术"></TextView>
+
+        <TextView
+            android:id="@+id/hualiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/operation"
+            android:layout_alignLeft="@id/operation"
+            android:layout_marginTop="20dp"
+            android:textColor="#DB7093"
+            android:text="化疗"></TextView>
+
+        <TextView
+            android:id="@+id/fangliao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hualiao"
+            android:layout_alignLeft="@id/hualiao"
+            android:layout_marginTop="20dp"
+            android:textColor="#DB7093"
+            android:text="放疗"></TextView>
+
+
+        <TextView
+            android:id="@+id/mianyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fangliao"
+            android:layout_alignLeft="@id/operation"
+            android:layout_marginTop="20dp"
+            android:textColor="#DB7093"
+            android:text="免疫疗法"></TextView>
+
+        <TextView
+            android:id="@+id/more2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tuofa"
+            android:layout_alignLeft="@id/nutrition"
+            android:layout_marginTop="20dp"
+            android:textColor="#DB7093"
+            android:text="更多>>"></TextView>
+    </RelativeLayout>
+</RelativeLayout>
